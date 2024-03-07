@@ -34,6 +34,9 @@ plot(mid_lon(inside_idx),mid_lat(inside_idx),'sr','LineWidth',1)
 grid on;
 plot_google_map('maptype','terrain','APIKey','AIzaSyCgnWnM3NMYbWe7N4svoOXE7B2jwIv28F8') %%%Google's API key made by nick.matlab.error@gmail.com
 pause(0.1)
+filename1=strcat('Pop_',num2str(center_lat),'_',num2str(center_lon),'_',num2str(radius_km),'.png');
+pause(0.1)
+saveas(gcf,char(filename1))
 
 
 
